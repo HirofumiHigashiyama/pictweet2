@@ -1,1 +1,5 @@
-<p>it's ok!</p>
+<div class="contents row" >
+  <% @tweets.each do |tweet| %>
+    <p><%= tweet.name %></p>
+  <% end %>
+</div>
