@@ -6,7 +6,6 @@ class TweetsController < ApplicationController
   end
   def create
     Tweet.create(tweet_params)
-    binding.pry
   end
 
   private
