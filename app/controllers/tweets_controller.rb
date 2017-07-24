@@ -9,12 +9,12 @@ class TweetsController < ApplicationController
   end
 
   def create
-    Tweet.create(name: tweet_params[:name], text: tweet_params[:text], image: tweet_params[:image], user_id: current_user.id)
+    Tweet.create(text: tweet_params[:text], image: tweet_params[:image], user_id: current_user.id)
   end
 
   private
   def tweet_params
-    params.permit(:name, :text, :image, )
+    params.permit(:text, :image, )
   end
 
   def move_to_index
