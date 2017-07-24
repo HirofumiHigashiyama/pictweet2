@@ -5,6 +5,6 @@ class TweetsController < ApplicationController
   def new
   end
   def create
-    Tweet.create(name: "", text: "", image: "")
+    Tweet.create(name: params[:name], text: params[:text], image: params[:image])
   end
 end
