@@ -4,4 +4,7 @@ class TweetsController < ApplicationController
   end
   def new
   end
+  def create
+    Tweet.create(name: "", text: "", image: "")
+  end
 end
